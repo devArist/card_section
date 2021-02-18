@@ -72,21 +72,18 @@ a {
     align-items: center;
 }
 .title-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 
 .title{
-    width: 300px;
+    text-align: center;
 }
 .line{
-    transform: translate(50%, 50%);
+    display: block;
     width: 70px;
     height: 5px;
     background: orange;
+    margin: 0 auto;
 }
 
 .card{
@@ -124,7 +121,7 @@ a {
 .card-container{
     display: flex;
     justify-content: center;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 
@@ -228,5 +225,67 @@ a {
 
     .intro .navbar.active .nav {
         transform: translateX(0);
+    }
+}
+
+@media (max-width:567px){
+    .menu{
+        min-height: 100vh;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 150px;
+        height: 100px;
+        margin: 0 0 15px;
+        padding: 8px 0;
+    }
+
+    .icon-container{
+        width: 50px;
+    }
+
+    .icon-container i{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width:568px) and (max-width:992px){
+    .menu{
+        height: 100vh;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 150px;
+        height: 100px;
+        margin: 0 0 15px;
+        padding: 8px 0;
+    }
+
+    .icon-container{
+        width: 50px;
+    }
+
+    .icon-container i{
+        font-size: 1.25rem;
+    }
+
+    .card span{
+        font-size: 1rem;
+    }
+
+    .title-container{
+        margin-top: 12.5rem;
     }
 }
